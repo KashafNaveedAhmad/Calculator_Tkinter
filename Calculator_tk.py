@@ -8,12 +8,23 @@ import tkinter
 
 window=tkinter.Tk()
 window.title("K's CALCULATOR")
-window.geometry("243x322")
+window.geometry("243x360")
 
 
 window.config(bg="black")
 entry=tkinter.Entry(window,font=("new times roman",18,"bold"),bg="black",fg="white",width=10)
 entry.grid(row=1,column=0,columnspan=4,rowspan=5,sticky=("nsew"),padx=8,pady=4)
+
+Label1=tkinter.Label(
+    window,
+    text="K's Calculator  ",
+    fg="dark slate grey",
+    bg="grey6",
+    font=("new times roman",15,"bold")
+    )
+Label1.grid(row=0,column=0,columnspan=4,sticky=("nsew"),padx=8,pady=4)
+
+
 
 
 def on_button_click(value):
